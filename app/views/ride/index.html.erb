@@ -1,0 +1,9 @@
+<h1>Articles</h1>
+
+<ul>
+  <% @rides.each do |ride| %>
+    <li>
+      <%= ride.passenger.name %> , <%= ride.driver.name %>, <% ride.status %>, <% ride.fare%>
+    </li>
+  <% end %>
+</ul>
